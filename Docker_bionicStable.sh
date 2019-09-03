@@ -23,5 +23,5 @@ if [[ $var1 == "y" || $var1 == "Y" || $var1 == "yes" || $var1 == "Yes" ]]
     then
         sudo reboot
 else
-    echo "\e[1;31mIf you want to use docker commands without sudo, restart your computer.\e[0m"
+    printf "\033[1;31mIf you want to use docker commands without sudo, restart your computer.\033[0m \n"
 fi
